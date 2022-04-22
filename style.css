@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #f0f5a6;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+.direita .esquerda, form{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.direita{
+    width:500px;
+    align-items: flex-start
+}
+
+/* todas as img da classe direita terão esse estilo */
+.direita img{
+    height: 150px;
+    
+}
+
+/* todos os parágrafos da classe direita terão esse estilo */
+.direita p{
+    font-size: 30px;
+    color: #1c1e21;
+    height: 200px;
+    font-family:'Roboto Condensed', sans-serif;
+    position:relative;
+    
+
+}
+
+.esquerda{
+    width:700px;
+}
+
+form{
+    background-color: white;
+    border-radius: 10px;
+    width: 700px;
+    display:flex;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+form h1{
+    padding-bottom: 25px;
+    margin-left: 70px;
+    font-size: 45px;
+    
+}
+
+form input{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    outline: none;
+    font-size: 16px;
+}
+
+
+form input:focus{
+    border: 1px solid #1877f2;
+}
+.esquerda__inscricao{
+    padding-top: 20px;
+    border-top: 1px solid #999;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.esquerda__botaoinscricao{
+    background-color:#252524;
+    padding:15px ;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    color: rgb(240, 236, 15);
+    font-size: 17px;
+    font-family: 'Arial';
+    font-weight: 600;
+    transition:0.5s;
+    border-color: rgb(241, 161, 13);
+    width:200px;
+}
+
+.esquerda__botaoinscricao:hover{
+    background-color: rgb(170, 163, 59)
+}
+
+@media(max-width:950px){
+
+    .container{
+        flex-direction: column;
+    }
+
+    .direita{
+        width:400px;
+        align-content:center;
+        align-items:center;
+    }
+
+    .direita p{
+        height: 75px;
+        font-size: 20px;
+    }
+
+}
+
+@media(max-width:500px){
+
+    .esquerda{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center
+    }
+
+    
+    form{
+        width:350px;
+        align-content: center;
+        align-items:center;
+    }
+    .direita img{
+        height: 95px;
+    }
+}
+
+@media(max-width:380px){
+    .esquerda{
+        display: flex;
+        justify-content:center;
+    }
+
+    .direita{
+        display: flex;
+        justify-content: center;
+    }
+
+    .direita img{
+        height: 95px;
+        
+    }
+
+    form{
+        width:250px;
+        align-content: center;
+        align-items:center;
+    }
+
+    .direita p, .esquerda p{
+        display: none;
+    }
+
+    form input, .esquerda__botaoinscricao{
+        font-size: 12px;
+    }
+}

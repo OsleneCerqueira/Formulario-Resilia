@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulário de Inscriçao Resilia</title>
+    <!-- Importando CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Criando o conteiner principal -->
+    <div class="container">
+
+        <!-- Criando a div lado esquerdo -->
+        <div class="direita">
+            <img src="./img/logo.png" alt="Logo da Resilia">
+            <p>
+                Nossa missão é capacitar os melhores profissionais de tecnologia para o mercado de trabalho.
+            </p>
+        </div>
+
+        <!-- Criando a div lado direito -->
+        <div class="esquerda">
+                
+            <form action="">
+                <h1>Formulário de Inscrição</h1>
+                <label for="nomecompleto">Nome Completo:</label>
+                <input type="text" name="nomecompleto" placeholder="Nome e Sobrenome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email"  name="email" placeholder="Email" required>
+
+                <label for="dataNacimento">Data de Nascimento:</label>
+                <input type="date" name="dataNacimento" required/>
+
+                <label for="cpf">CPF:</label>
+                <input type="text" name="cpf" placeholder="000.000.000-00" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
+                <!-- Botão 'Cadastro' do bloco right -->
+                <div class="esquerda__inscricao">
+                    <input type="submit" value="Inscrever-se"class="esquerda__botaoinscricao"> 
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</body>
+</html>
